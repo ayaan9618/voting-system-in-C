@@ -14,7 +14,7 @@ This C program simulates a basic digital voting system for educational purposes.
 
 **Limitations:**
 
-* This is a simplified model for educational purposes only.
+* This is a simplified model for educational purposes and project purpose  only.
 * Does not include security features or advanced functionalities found in real-world voting systems.
 * Relies on static data structures, limiting scalability.
 
