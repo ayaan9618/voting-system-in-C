@@ -123,5 +123,6 @@ int main()
   }
   }
 else printf("wrong passcode plz contact devoloper");
+  //thanKing user.....
 printf("\n thank for using voting system\n to use again run again")
 }
