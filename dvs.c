@@ -35,68 +35,54 @@ int main()
   candidates[4].party = "independent";
   candidates[4].vote = 0;
 
-   //printf("\nName: %s\nParty: %s\nVote: %d\n", candidates[0].name, candidates[0].party, candidates[0].vote);
-
+  here:
   printf("welcome to digital voting system\n");
-  passo=939263;
-  passcodeo=get_int("enter your passcode:");
-  //printf("enter your passcode\n");
-  //scanf("%d",&passcode);
-  if(passcodeo==passo)
+  pass = 939263;
+  // passcode=get_int("enter your passcode:");
+  printf("enter your passcode\n");
+  scanf("%d", &passcode);
+  if (passcode == pass)
   {
- printf("welcome to voting platform");
-    printf("\nto cast vote type v\n to known result tpye d\n");
-    p=get_char("\ntpye now:\n");
+    poa:
+    system("clear");
+    printf("welcome to voting platform");
+
+    printf("\nTo cast vote type v\nTo know result type d\n");
+    char p;
+    printf("\nType now:\n");
+    scanf(" %c", &p);
+
     switch (p)
     {
     case 'v':
-      printf("\nwelcome cast vote  box\n");
-      for ( i = 0; i <=5; i++)
+      printf("\nWelcome to the cast vote box\n");
+      for (int i = 0; i < 5; i++)
       {
-         printf("\n%d\nName: %s\nParty: %s\n", i, candidates[i].name, candidates[i].party);
+        printf("\n%d\nName: %s\nParty: %s\n", i, candidates[i].name, candidates[i].party);
       }
-      o=get_int("\nenter your choice\n");
-      switch (o)
+      int o;
+       printf("\nEnter your choice\n");
+       scanf("%d", &o);
+      if (o >= 0 && o < 5)
       {
-      case '0':
-      candidates[0].vote++;
-      break;
-      case '1':
-      candidates[1].vote++;
-      break;
-      case '2':
-        candidates[2].vote++;
-      break;
-      case '3':
-      candidates[3].vote++;
-      break;
-      case '4':
-        candidates[4].vote++;
-      break;
-      case '5':
-        candidates[5].vote++;
-      break;
-      default:
-      printf("invalid choice");
-      for ( i = 0; i <=5; i++)
+        candidates[o].vote++;
+        system("clear");
+        //system("cls");
+        printf("\n DO YOU WANT CONTIUNE \n Y FOR YES ||N FOR NO\n");
+        char k;
+        scanf(" %c", &k);
+        if (k == 'y' || k == 'Y')
+        {
+         goto poa;
+        }
+        else{
+            break;
+            }
+      }
+
+      else
       {
-       printf("\nName: %s\nParty: %s\nVote: %d\n", candidates[i].name, candidates[i].party, candidates[i].vote);
+        printf("Invalid choice\n");
       }
-      
-        break;
-      }
-      
-    break;
+      break;
     case 'd':
-
-    break;
-    default:
-        break;
-    }
-  }
-  else
-  printf("wrong passcode plz contact devoloper");
-
-
-  
-}
