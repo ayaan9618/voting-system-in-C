@@ -1,38 +1,97 @@
-## Digital Voting System (Educational Purpose)
-**by ayaan.viper (ongoing)**
+# Digital Voting System-c by ayaan9618
 
-**Description:**
+## Overview
 
-This C program simulates a basic digital voting system for educational purposes. It demonstrates core concepts of voting systems, including candidate registration, voter registration, casting votes, and tallying results.
+The Digital Voting System is a simple command-line application implemented in C that allows users to cast votes in an election. The system uses the `cs50.h` library, which provides functions for handling user input and other common operations. This application is designed to demonstrate basic concepts of voting systems and is suitable for educational purposes.
 
-**Features:**
+## Features
 
-* **Candidate Registration:** Allows for adding candidates with names and symbols.
-* **Voter Registration:** Enables registering voters with unique IDs.
-* **Voting:** Simulates the voting process where registered voters cast votes for candidates.
-* **Result Calculation:** Calculates and displays the final vote count for each candidate.
 
-**Limitations:**
+- **Cast Votes**: Allow voters to cast their votes for candidates.
+- **View Results**: Display the results of the election.
 
-* This is a simplified model for educational purposes and project purpose  only.
-* Does not include security features or advanced functionalities found in real-world voting systems.
-* Relies on static data structures, limiting scalability.
+## Prerequisites
 
-**How to Use:**
+To build and run this program, you need:
 
-1. Compile the C code into an executable file.
-2. Run the executable.
-3. Follow the on-screen prompts to register candidates, voters, and cast votes.
-4. View the final results after the voting process is complete.
+- A C compiler that supports the C standard (e.g., Clang).
+- The `cs50.h` library.
 
-**Note:** This project serves as a foundation for learning about voting system concepts. For a robust and secure voting system, additional features and security measures would be necessary.
- 
-**Possible Enhancements:**
+## Installation
 
-* Implement user authentication and authorization.
-* Add features for vote verification and auditing.
-* Explore data structures for better performance and scalability.
-* Consider using encryption for data security.
+### 1. Install Clang
+
+If you don't have Clang installed, you can install it via your package manager. For example, on Ubuntu, use:
+
+```bash
+sudo apt-get update
+sudo apt-get install clang
+```
+
+### 2. Install `cs50.h` Library
+
+The `cs50.h` library is part of the CS50 course from Harvard. You can install it using the following command:
+
+```bash
+sudo apt-get install libcs50-dev
+```
+
+### 3. Clone the Repository
+
+Clone the repository containing the Digital Voting System source code:
+
+```bash
+git clone https://github.com/yourusername/digital-voting-system.git
+cd digital-voting-system
+```
+
+## Building the Application
+
+To compile the Digital Voting System, use Clang:
+
+```bash
+clang -o voting_system voting_system.c -lcs50
+```
+
+This command compiles `voting_system.c` into an executable named `voting_system`, linking it with the `cs50` library.
+
+## Usage
+
+1. **Run the Program**
+
+   ```bash
+   ./voting_system
+   ```
+
+2. **Follow the Prompts**
+
+   - Enter the number of candidates.
+   - Input the names of the candidates.
+   - Cast votes for the candidates by entering their names.
+   - View the results of the election.
+
+## Example
+
+Here's a basic example of how to use the application:
+
+```bash
+./voting_system
+```
+
+You will be prompted to enter the number of candidates, their names, and then cast your votes. Finally, you can view the results.
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, please contact iyandevop@gmail.com
+
+---
+
+Thank you for using the Digital Voting System!
 
 **Disclaimer:** This project is intended for educational purposes only and does not represent a secure or production-ready voting system.
  
