@@ -1,19 +1,18 @@
-//welcome to online voting system made By Ayaan.
-#include <stdio.h>
 #include <cs50.h>
-#include <string.h>
-
-
-typedef struct {
-    char name[50];
-    char party[50];
-    int vote;
+#include <stdlib.h>
+#include <stdio.h>
+typedef struct
+{
+  string name;
+  string party;
+  int vote;
 } candidate;
 
-int main(){
-int passo,passcodeo,passi,passcodei,i,;
-char p,o;
- candidate candidates[5]; // declare an array of 5 candidate structs
+int main()
+{
+  candidate candidates[5];
+  int pass, passcode;
+
 
     // Assigning the standing candidates
     strcpy(candidates[0].name,"owasis");
