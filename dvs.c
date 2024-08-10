@@ -14,25 +14,26 @@ int main()
   int pass, passcode;
 
 
-    // Assigning the standing candidates
-    strcpy(candidates[0].name,"owasis");
-    strcpy(candidates[0].party,"MIM");
-    candidates[0].vote = 0;
-      strcpy(candidates[1].name,"modi");
-    strcpy(candidates[1].party,"BJP");
-    candidates[1].vote = 0;
-  strcpy(candidates[2].name,"KCR");
-    strcpy(candidates[2].party,"BRS");
-    candidates[2].vote = 0;
-      strcpy(candidates[3].name,"RAHUL");
-    strcpy(candidates[3].party,"CONGRESS");
-    candidates[3].vote = 0;
-      strcpy(candidates[4].name,"ALI");
-    strcpy(candidates[4].party,"INDEPENT");
-    candidates[4].vote = 0;
-      strcpy(candidates[5].name,"NOTA");
-    strcpy(candidates[5].party,"NOTA");
-    candidates[5].vote = 0;
+  // Assigning the candidates
+  candidates[0].name = "rehan";
+  candidates[0].party = "MIM";
+  candidates[0].vote = 0;
+
+  candidates[1].name = "makilk";
+  candidates[1].party = "ncp";
+  candidates[1].vote = 0;
+
+  candidates[2].name = "mani";
+  candidates[2].party = "bjp";
+  candidates[2].vote = 0;
+
+  candidates[3].name = "bona";
+  candidates[3].party = "cdp";
+  candidates[3].vote = 0;
+
+  candidates[4].name = "dr.athar";
+  candidates[4].party = "independent";
+  candidates[4].vote = 0;
 
    //printf("\nName: %s\nParty: %s\nVote: %d\n", candidates[0].name, candidates[0].party, candidates[0].vote);
 
