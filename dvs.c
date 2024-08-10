@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdlib.h>
 #include <stdio.h>
+
 typedef struct
 {
   string name;
@@ -34,7 +35,7 @@ int main()
   candidates[4].name = "dr.athar";
   candidates[4].party = "independent";
   candidates[4].vote = 0;
-
+//main part
   here:
   printf("welcome to digital voting system\n");
   pass = 939263;
