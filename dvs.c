@@ -86,3 +86,42 @@ int main()
       }
       break;
     case 'd':
+      system("clear");
+      printf("welcome to digital voting system result\n");
+      pass = 9618;
+      // passcode=get_int("enter your passcode:");
+      printf("enter your passcode\n");
+      scanf("%d", &passcode);
+      if (passcode == pass)
+      {
+        for (int i = 0; i < 5; i++)
+        {
+          printf("\n%d\nName: %s\nParty: %s\n vote: %d\n", i, candidates[i].name, candidates[i].party, candidates[i].vote);
+
+        }
+        printf("\n DO YOU WANT CONTIUNE \n Y FOR YES ||N FOR NO\n");
+        char k;
+        scanf(" %c", &k);
+        if (k == 'y' || k == 'Y')
+        {
+         goto poa;
+        }
+        else{
+            break;
+            }
+      }
+      else
+        printf("wrong passcode plz contact devoloper");
+
+    break;
+
+    default:
+    printf("Invalid option\n");
+
+    goto here;
+    break;
+  }
+  }
+else printf("wrong passcode plz contact devoloper");
+printf("\n thank for using voting system\n to use again run again")
+}
