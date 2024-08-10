@@ -47,7 +47,7 @@ int main()
     poa:
     system("clear");
     printf("welcome to voting platform");
-
+//chosing
     printf("\nTo cast vote type v\nTo know result type d\n");
     char p;
     printf("\nType now:\n");
