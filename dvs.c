@@ -66,13 +66,17 @@ int main()
         printf("\n%d\nName: %s\nParty: %s\n", i, candidates[i].name, candidates[i].party);
       }
       int o;
+      //voting
        printf("\nEnter your choice\n");
        scanf("%d", &o);
       if (o >= 0 && o < 5)
       {
         candidates[o].vote++;
-        system("clear");
-        //system("cls");
+      }
+        system("clear");   //clear screen feature for terminal of any ide
+        //system("cls");    //clear screen feature for windows
+
+        
         printf("\n DO YOU WANT CONTIUNE \n Y FOR YES ||N FOR NO\n");
         char k;
         scanf(" %c", &k);
