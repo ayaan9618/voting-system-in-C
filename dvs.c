@@ -76,7 +76,7 @@ int main()
         system("clear");   //clear screen feature for terminal of any ide
         //system("cls");    //clear screen feature for windows
 
-        
+        // asking for countiune
         printf("\n DO YOU WANT CONTIUNE \n Y FOR YES ||N FOR NO\n");
         char k;
         scanf(" %c", &k);
@@ -108,6 +108,8 @@ int main()
           printf("\n%d\nName: %s\nParty: %s\n vote: %d\n", i, candidates[i].name, candidates[i].party, candidates[i].vote);
 
         }
+
+        // asking for countinue
         printf("\n DO YOU WANT CONTIUNE \n Y FOR YES ||N FOR NO\n");
         char k;
         scanf(" %c", &k);
