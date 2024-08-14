@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+//DEFINING STRUCT
 typedef struct
 {
   string name;
@@ -9,6 +10,7 @@ typedef struct
   int vote;
 } candidate;
 
+//WRITING MAIN FUCTIONS
 int main()
 {
   candidate candidates[5];
@@ -47,7 +49,7 @@ int main()
     poa:
     system("clear");
     printf("welcome to voting platform");
-//chosing
+//chosing 
     printf("\nTo cast vote type v\nTo know result type d\n");
     char p;
     printf("\nType now:\n");
