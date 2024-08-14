@@ -54,11 +54,13 @@ int main()
     char p;
     printf("\nType now:\n");
     scanf(" %c", &p);
-
+    
+// switch case for choose
     switch (p)
     {
     case 'v':
       printf("\nWelcome to the cast vote box\n");
+      //showing list of candidaties
       for (int i = 0; i < 5; i++)
       {
         printf("\n%d\nName: %s\nParty: %s\n", i, candidates[i].name, candidates[i].party);
