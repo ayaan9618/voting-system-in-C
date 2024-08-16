@@ -1,6 +1,6 @@
 # Digital Voting System-c by ayaan9618
 
-## Overview
+**Overview**
 
 The Digital Voting System is a simple command-line application implemented in C that allows users to cast votes in an election. The system uses the `cs50.h` library, which provides functions for handling user input and other common operations. This application is designed to demonstrate basic concepts of voting systems and is suitable for educational purposes.
 
