@@ -39,7 +39,7 @@ int main()
   candidates[4].party = "independent";
   candidates[4].vote = 0;
 //main part
-  here:
+  here:       //declare for go to
   printf("welcome to digital voting system\n");
   pass = 939263;
   // passcode=get_int("enter your passcode:");
