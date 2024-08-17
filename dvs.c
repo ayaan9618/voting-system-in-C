@@ -104,6 +104,7 @@ int main()
       scanf("%d", &passcode);
       if (passcode == pass)
       {
+      //printing result 
         for (int i = 0; i < 5; i++)
         {
           printf("\n%d\nName: %s\nParty: %s\n vote: %d\n", i, candidates[i].name, candidates[i].party, candidates[i].vote);
