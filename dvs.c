@@ -1,4 +1,4 @@
-//Welcome 
+//Welcome digital voting system 
 #include <cs50.h>
 #include <stdlib.h>
 #include <stdio.h>
