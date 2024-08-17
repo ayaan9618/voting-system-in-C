@@ -15,7 +15,7 @@ typedef struct
 int main()
 {
   candidate candidates[5];
-  int pass, passcode;
+  int pass, passcode, o;
 
 
   // Assigning the candidates
@@ -66,7 +66,7 @@ int main()
       {
         printf("\n%d\nName: %s\nParty: %s\n", i, candidates[i].name, candidates[i].party);
       }
-      int o;
+      
       //voting
        printf("\nEnter your choice\n");
        scanf("%d", &o);
