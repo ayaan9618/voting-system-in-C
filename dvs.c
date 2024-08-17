@@ -47,7 +47,7 @@ int main()
   scanf("%d", &passcode);
   if (passcode == pass)
   {
-    poa:
+    poa:       //declare for go to
     system("clear");
     printf("welcome to voting platform");
 //chosing 
