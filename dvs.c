@@ -83,7 +83,7 @@ int main()
         scanf(" %c", &k);
         if (k == 'y' || k == 'Y')
         {
-         goto poa;
+         goto poa; // goto functions
         }
         else{
             break;
