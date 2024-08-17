@@ -130,7 +130,7 @@ int main()
     default:
     printf("Invalid option\n");
 
-    goto here;
+    goto here; //goto function 
     break;
   }
   }
