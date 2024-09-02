@@ -97,6 +97,7 @@ int main()
       break;
     case 'd':
       system("clear");
+// into result mode
       printf("welcome to digital voting system result\n");
       pass = 9618;
       // passcode=get_int("enter your passcode:");
